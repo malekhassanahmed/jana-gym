@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Pizza House menu â€” classic, Italian, vegetarian and special pizzas plus drinks and desserts, all made fresh to order.">
+  <meta name="theme-color" content="#1b1310">
+  <title>Our Menu | Pizza House</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    <div class="container announcement-inner">
+      <span class="announcement-item">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 11h18M5 11a7 7 0 0 1 14 0M7 11v7a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-7"/></svg>
+        Free delivery on orders over $35
+      </span>
+      <span class="announcement-item announcement-code">Use code <strong>PIZZA2</strong> for buy 1 get 1 free</span>
+      <a class="announcement-item" href="tel:+15550142020">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+        (555) 014-2020
+      </a>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Pizza House home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 5 43 40a2 2 0 0 1-2.7 2.7L24 34.5l-16.3 8.2A2 2 0 0 1 5 40Z" fill="currentColor"/><circle cx="22" cy="21" r="2.4" fill="#fff8ec"/><circle cx="29" cy="29" r="1.8" fill="#fff8ec"/><circle cx="17" cy="31" r="1.6" fill="#fff8ec"/></svg>
+        </span>
+        <span class="brand-text">Pizza<span>House</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="menu.html">Menu</a>
+        <a href="index.html#offers">Offers</a>
+        <a href="index.html#story">Our Story</a>
+        <a href="index.html#reviews">Reviews</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-dark btn-sm nav-order" href="#menu-grid">Order Now</a>
+        <button class="cart-toggle" type="button" data-cart-toggle aria-label="Open cart, 0 items">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 7h14l-1.5 9h-11L6 7Zm0 0-.8-3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="menu-hero">
+      <div class="menu-hero-glow" aria-hidden="true"></div>
+      <div class="container menu-hero-inner">
+        <div class="menu-hero-copy">
+          <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span aria-current="page">Menu</span>
+          </nav>
+          <span class="eyebrow reveal"><span class="eyebrow-dot"></span>Freshly baked, always</span>
+          <h1 class="reveal">A menu made for<br><span class="accent-word">sharing.</span></h1>
+          <p class="reveal">From time-honored Neapolitan classics to our chef's boldest creations, every pizza starts with 48-hour dough and ends with a little sprinkling of magic.</p>
+        </div>
+        <div class="menu-hero-note reveal">
+          <div class="menu-hero-pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Pizza chef holding a freshly baked pizza" fetchpriority="high">
+          </div>
+          <div class="menu-note-card">
+            <span class="float-icon">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>
+            </span>
+            <span><strong>Chef's pick</strong><small>Try the Tartufo Bianco</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu-grid">
+      <div class="container">
+        <div class="menu-toolbar reveal">
+          <div class="menu-filters" role="group" aria-label="Filter menu by category">
+            <button class="filter-chip active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="classic">Classic Pizza</button>
+            <button class="filter-chip" type="button" data-filter="italian">Italian Pizza</button>
+            <button class="filter-chip" type="button" data-filter="vegetarian">Vegetarian</button>
+            <button class="filter-chip" type="button" data-filter="special">Special Pizza</button>
+            <button class="filter-chip" type="button" data-filter="drinks">Drinks &amp; Desserts</button>
+          </div>
+          <span class="menu-count" data-menu-count>20 items</span>
+        </div>
+
+        <div class="pizza-grid menu-pizza-grid">
+          <article class="pizza-card reveal" data-category="classic">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Margherita pizza with fresh basil" loading="lazy">
+              <span class="card-tag">Bestseller</span>
+              <span class="card-price">$14.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Margherita</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>San Marzano tomato, fior di latte, fresh basil and a drizzle of extra virgin olive oil.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Classic</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="margherita" data-name="Margherita" data-price="14.90" data-image="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="classic" style="--delay: .05s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Pepperoni pizza with crispy edges" loading="lazy">
+              <span class="card-tag card-tag-orange">Fan favorite</span>
+              <span class="card-price">$16.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Pepperoni Classic</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Double pepperoni, aged mozzarella, tomato sauce and a touch of hot honey.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Classic</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="pepperoni" data-name="Pepperoni Classic" data-price="16.50" data-image="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="classic" style="--delay: .1s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Four cheese pizza" loading="lazy">
+              <span class="card-price">$17.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Four Cheese</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.7</span>
+              </div>
+              <p>Mozzarella, gorgonzola, fontina and parmesan with a hint of rosemary honey.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Classic</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="four-cheese" data-name="Four Cheese" data-price="17.50" data-image="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="classic" style="--delay: .15s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Hawaiian pizza with pineapple and ham" loading="lazy">
+              <span class="card-price">$16.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Hawaiian Sunset</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.6</span>
+              </div>
+              <p>Smoked ham, caramelized pineapple, mozzarella and a swirl of tomato sauce.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Classic</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="hawaiian" data-name="Hawaiian Sunset" data-price="16.90" data-image="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="italian" style="--delay: .05s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Diavola pizza with spicy salami" loading="lazy">
+              <span class="card-tag">Spicy</span>
+              <span class="card-price">$17.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Diavola</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>Spicy salami, roasted red peppers, mozzarella, chili flakes and oregano.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Italian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="diavola" data-name="Diavola" data-price="17.90" data-image="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="italian" style="--delay: .1s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Prosciutto and arugula pizza" loading="lazy">
+              <span class="card-price">$19.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Prosciutto &amp; Rucola</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Prosciutto di Parma, fresh arugula, shaved parmesan and lemon oil.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Italian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="prosciutto" data-name="Prosciutto &amp; Rucola" data-price="19.50" data-image="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="italian" style="--delay: .15s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Quattro Stagioni pizza with artichokes and olives" loading="lazy">
+              <span class="card-price">$18.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Quattro Stagioni</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.7</span>
+              </div>
+              <p>Artichokes, mushrooms, black olives and prosciutto on tomato and mozzarella.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Italian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="quattro-stagioni" data-name="Quattro Stagioni" data-price="18.90" data-image="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="italian" style="--delay: .2s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Truffle pizza with mushrooms" loading="lazy">
+              <span class="card-tag card-tag-green">Chef's pick</span>
+              <span class="card-price">$21.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Tartufo Bianco</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>White truffle cream, wild mushrooms, mozzarella, thyme and parmesan.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Italian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="tartufo-bianco" data-name="Tartufo Bianco" data-price="21.90" data-image="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="vegetarian" style="--delay: .05s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Garden vegetable pizza" loading="lazy">
+              <span class="card-tag card-tag-green">Vegetarian</span>
+              <span class="card-price">$16.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Garden Delight</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.7</span>
+              </div>
+              <p>Zucchini, roasted peppers, red onion, cherry tomatoes and basil pesto.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Vegetarian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="garden-delight" data-name="Garden Delight" data-price="16.90" data-image="https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="vegetarian" style="--delay: .1s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Mediterranean pizza with olives and feta" loading="lazy">
+              <span class="card-price">$17.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Mediterranean</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Kalamata olives, feta, sun-dried tomatoes, red onion and oregano.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Vegetarian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="mediterranean" data-name="Mediterranean" data-price="17.50" data-image="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="vegetarian" style="--delay: .15s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Spinach and feta pizza" loading="lazy">
+              <span class="card-tag card-tag-green">Vegetarian</span>
+              <span class="card-price">$18.20</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Spinach &amp; Feta</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.7</span>
+              </div>
+              <p>Baby spinach, creamy feta, roasted garlic, mozzarella and pine nuts.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Vegetarian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="spinach-feta" data-name="Spinach &amp; Feta" data-price="18.20" data-image="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="vegetarian" style="--delay: .2s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Mushroom truffle pizza" loading="lazy">
+              <span class="card-tag card-tag-green">Vegetarian</span>
+              <span class="card-price">$18.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Mushroom Truffle</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Wild mushrooms, truffle cream, mozzarella, thyme and shaved parmesan.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Vegetarian</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="mushroom-truffle" data-name="Mushroom Truffle" data-price="18.90" data-image="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="special" style="--delay: .05s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Meat lovers pizza with sausage and bacon" loading="lazy">
+              <span class="card-tag card-tag-orange">Loaded</span>
+              <span class="card-price">$20.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Meat Lovers</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>Italian sausage, pepperoni, smoked bacon, ham and extra mozzarella.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Special</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="meat-lovers" data-name="Meat Lovers" data-price="20.90" data-image="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="special" style="--delay: .1s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="BBQ chicken pizza" loading="lazy">
+              <span class="card-price">$19.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>BBQ Chicken</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Smoked chicken, caramelized onion, smoked gouda and tangy BBQ sauce.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Special</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="bbq-chicken" data-name="BBQ Chicken" data-price="19.90" data-image="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="special" style="--delay: .15s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Seafood pizza with shrimp" loading="lazy">
+              <span class="card-tag">New</span>
+              <span class="card-price">$22.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Seafood Marinara</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>Garlic shrimp, calamari, mussels, cherry tomato and lemon parsley oil.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Special</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="seafood-marinara" data-name="Seafood Marinara" data-price="22.50" data-image="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="special" style="--delay: .2s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Pizza House Supreme loaded pizza" loading="lazy">
+              <span class="card-tag card-tag-orange">Signature</span>
+              <span class="card-price">$21.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Pizza House Supreme</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>5.0</span>
+              </div>
+              <p>Pepperoni, sausage, peppers, mushrooms, olives, onion and extra cheese.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Special</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="supreme" data-name="Pizza House Supreme" data-price="21.90" data-image="https://images.unsplash.com/photo-1595708684082-a173bb3a06c5?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="drinks" style="--delay: .05s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Fresh homemade lemonade" loading="lazy">
+              <span class="card-tag card-tag-green">Fresh</span>
+              <span class="card-price">$4.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Fresh Lemonade</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Squeezed-to-order lemons, cane sugar, mint and sparkling water.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Drinks &amp; Desserts</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="lemonade" data-name="Fresh Lemonade" data-price="4.50" data-image="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="drinks" style="--delay: .1s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Blood orange soda with ice" loading="lazy">
+              <span class="card-price">$4.90</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Blood Orange Soda</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.7</span>
+              </div>
+              <p>Italian blood orange soda over ice with a twist of orange peel.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Drinks &amp; Desserts</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="blood-orange-soda" data-name="Blood Orange Soda" data-price="4.90" data-image="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="drinks" style="--delay: .15s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Classic Italian tiramisu" loading="lazy">
+              <span class="card-tag">House favorite</span>
+              <span class="card-price">$7.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Tiramisu</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.9</span>
+              </div>
+              <p>Espresso-soaked ladyfingers, mascarpone cream and cocoa dust.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Drinks &amp; Desserts</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="tiramisu" data-name="Tiramisu" data-price="7.50" data-image="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="pizza-card reveal" data-category="drinks" style="--delay: .2s">
+            <div class="pizza-image">
+              <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Italian cannoli dessert" loading="lazy">
+              <span class="card-price">$6.50</span>
+            </div>
+            <div class="pizza-body">
+              <div class="pizza-title-row">
+                <h3>Cannoli</h3>
+                <span class="rating"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9Z" fill="currentColor"/></svg>4.8</span>
+              </div>
+              <p>Crisp shells filled with sweet ricotta, pistachio and chocolate chips.</p>
+              <div class="pizza-meta">
+                <span class="menu-cat-label">Drinks &amp; Desserts</span>
+                <button class="add-btn" type="button" data-add-to-cart data-id="cannoli" data-name="Cannoli" data-price="6.50" data-image="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&amp;fit=crop&amp;w=160&amp;q=70">
+                  <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-help reveal">
+          <div class="menu-help-icon">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+          </div>
+          <div>
+            <h3>Allergies or a custom craving?</h3>
+            <p>We're happy to adjust toppings, accommodate dietary needs or help you choose. Give us a call.</p>
+          </div>
+          <a class="btn btn-outline" href="tel:+15550142020">(555) 014-2020</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-pattern" aria-hidden="true"></div>
+          <div class="cta-copy">
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span>From our oven to your door</span>
+            <h2>Can't decide?<br>Let's make it <em>easy.</em></h2>
+            <p>Try our crowd-pleasing family combo â€” two large pizzas, garlic knots and a 2L drink for $39.90.</p>
+            <div class="cta-actions">
+              <a class="btn btn-cream" href="#menu-grid">Build your order
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-outline-light" href="index.html#offers">See all offers</a>
+            </div>
+          </div>
+          <div class="cta-pizza" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="index.html" aria-label="Pizza House home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M24 5 43 40a2 2 0 0 1-2.7 2.7L24 34.5l-16.3 8.2A2 2 0 0 1 5 40Z" fill="currentColor"/><circle cx="22" cy="21" r="2.4" fill="#1b1310"/><circle cx="29" cy="29" r="1.8" fill="#1b1310"/><circle cx="17" cy="31" r="1.6" fill="#1b1310"/></svg>
+            </span>
+            <span class="brand-text">Pizza<span>House</span></span>
+          </a>
+          <p>Handcrafted pizza, warm hospitality and a little bit of Napoli in every bite. Made fresh daily since 1987.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 3h-2a5 5 0 0 0-5 5v3H5v4h3v6h4v-6h3l1-4h-4V8a1 1 0 0 1 1-1h3Z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a4.5 4.5 0 1 1-4-4.5"/><path d="M14 3a6 6 0 0 0 6 6"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="index.html#offers">Special Offers</a>
+          <a href="index.html#story">Our Story</a>
+          <a href="index.html#reviews">Reviews</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Visit us</h4>
+          <p>248 Via Roma Street<br>Little Italy, NY 10013</p>
+          <p>Monâ€“Thu: 11am â€“ 10pm<br>Friâ€“Sun: 11am â€“ 11:30pm</p>
+          <a class="footer-contact" href="tel:+15550142020">(555) 014-2020</a>
+          <a class="footer-contact" href="mailto:hello@pizzahouse.com">hello@pizzahouse.com</a>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Get a slice of the news</h4>
+          <p>Join our table for secret menu drops, offers and good pizza energy.</p>
+          <form class="newsletter-form" data-newsletter>
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" type="email" placeholder="Your email address" required>
+            <button type="submit" aria-label="Subscribe">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </form>
+          <span class="newsletter-note">No spam. Just the good stuff.</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Pizza House. All rights reserved.</p>
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Accessibility</a>
+        </div>
+        <p class="footer-made">Made with <span>â™¥</span> and extra mozzarella</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" data-cart-overlay></div>
+  <aside class="cart-drawer" data-cart-drawer aria-hidden="true" aria-label="Shopping cart" inert>
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Your order</span>
+        <h2>Your cart</h2>
+      </div>
+      <button class="cart-close" type="button" data-cart-close aria-label="Close cart">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty>
+      <span class="cart-empty-icon">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 7h14l-1.5 9h-11L6 7Zm0 0-.8-3H2"/><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>
+      </span>
+      <h3>Your cart is empty</h3>
+      <p>Looks like it's time for a pizza emergency.</p>
+      <a class="btn btn-primary btn-sm" href="menu.html" data-cart-close>Browse the menu</a>
+    </div>
+    <div class="cart-footer" data-cart-footer>
+      <div class="cart-line"><span>Subtotal</span><strong data-cart-subtotal>$0.00</strong></div>
+      <div class="cart-line"><span>Delivery</span><span data-cart-delivery>FREE</span></div>
+      <div class="cart-line cart-total"><span>Total</span><strong data-cart-total>$0.00</strong></div>
+      <p class="cart-note">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+        Secure checkout آ· Free delivery over $35
+      </p>
+      <button class="btn btn-primary btn-block" type="button" data-checkout>Checkout
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <div class="toast" data-toast role="status" aria-live="polite">
+    <span class="toast-icon">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>
+    </span>
+    <span data-toast-message>Added to cart</span>
+  </div>
+</body>
+</html>
+
